@@ -1,0 +1,9 @@
+# Use inputs to ask the user the price of the meal and the percentage of the tip
+# the code should print out the value of the tip and the total bill of the meal
+number1 = int(input("Input price of the meal > "))
+number2 = int(input("percentage of the tip> "))
+
+tip = (number2*.01)* number1
+total = number1+tip
+print(f"the tip value is {int(tip)}%")
+print(f"Your total bill for today is {int(total)}$")
