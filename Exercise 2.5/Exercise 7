@@ -1,0 +1,23 @@
+while True:
+    try:
+        height = int(input("Enter height of your letter > "))
+        if height <= 3:
+            raise ValueError("Height can't be less than or equal to 3")
+        break
+    except ValueError as e:
+        print("Height can't be less than or equal to 3")
+    
+for i in range(1, 2):
+    space = " " * (height - i)
+    item = "*" * (2 * i - 1)
+    print(space + item)
+
+space = " " * (height-1-i)
+item = "* *"
+e_space = " " * (height -2-i)
+print(space + item)
+print(e_space+ "*****")
+
+for i in range(4, height+1 ):
+    space = " " * (height - i)
+    print(space + "*" + " " * (2 * i - 3) + "*")
