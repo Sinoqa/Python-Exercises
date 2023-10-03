@@ -1,0 +1,9 @@
+# . Write a program that asks the user to enter two numbers, x and y, and computes |x−y /x+y
+
+x = int(input("Input X > "))
+y = int(input("Input y > "))
+
+
+top = abs(x-y)
+bot = x+y
+print(top/bot)
