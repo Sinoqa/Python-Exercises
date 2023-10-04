@@ -1,0 +1,10 @@
+# . Write a program that asks the user to enter an angle between −180◦
+# and 180◦. Using an # expression with the modulo operator, convert the angle to its equivalent 
+# between 0◦ and 360◦
+n = int(input("give an angle between -180 or 180 > "))
+
+converted_n = (n+180) %360
+
+if converted_n == 0:
+    converted_n = 360
+print(converted_n)
