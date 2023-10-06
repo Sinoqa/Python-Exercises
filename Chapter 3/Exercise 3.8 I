@@ -1,0 +1,20 @@
+# . Write a program that asks the user for an hour between 1 and 12 and for how many hours in
+# the future they want to go. Print out what the hour will be that many hours into the future.
+# An example is shown below.
+
+
+current_t = int(input("Enter the current hour(1 - 12) > "))
+future_t = int(input("how many hours would you like to move forward> "))
+
+
+final_t = current_t + future_t
+if final_t >12:
+    final_t -=12
+
+    while final_t >12:
+        final_t -=12
+
+else:
+    pass
+
+print(f"{final_t} o' clock")
