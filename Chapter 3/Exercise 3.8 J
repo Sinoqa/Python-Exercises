@@ -1,0 +1,8 @@
+# one way to find out the last digit of a number is to mod the number by 10. Write a
+# program that asks the user to enter a power. Then find the last digit of 2 raised to that
+# power
+
+power = int(input("enter power here > "))
+
+last_d = 2 ** power
+print(last_d%10)
