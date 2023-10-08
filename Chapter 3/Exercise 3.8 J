@@ -6,3 +6,14 @@ power = int(input("enter power here > "))
 
 last_d = 2 ** power
 print(last_d%10)
+
+
+
+# One way to find out the last two digits of a number is to mod the number by 100. Write
+# a program that asks the user to enter a power. Then find the last two digits of 2 raised to
+# that power.
+
+power = int(input("enter power here > "))
+
+last_d = 2 ** power
+print(last_d%100)
