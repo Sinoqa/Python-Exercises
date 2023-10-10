@@ -1,0 +1,10 @@
+# Write a program that asks the user to enter a power and how many digits they want.
+# Find the last that many digits of 2 raised to the power the user entered.
+
+
+power = int(input("enter power here > "))
+digits_of_number  = int(input("enter last digits > "))
+last_d = 2 ** power
+mod = "1" +   "0" * digits_of_number
+int_mod = int(mod)
+print(last_d%int_mod)
