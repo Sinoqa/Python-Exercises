@@ -1,0 +1,10 @@
+# Write a program that asks the user to enter a weight in kilograms. The program should
+# convert it to pounds, printing the answer rounded to the nearest tenth of a pound.
+
+
+weight = float(input("Weight in kg/s > "))
+
+lbs = weight * 2.2
+
+
+print("%.2f lbs" % round(lbs, 2))
