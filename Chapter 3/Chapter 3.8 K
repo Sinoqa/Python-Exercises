@@ -1,0 +1,8 @@
+#  Write a program that asks the user for a number and prints out the factorial of that number.
+
+import math
+n = int(input("Find out which is sine cos tan> "))
+
+print(f"Sine = {math.sin(n)}")
+print(f"Cosine = {math.cos(n)}")
+print(f"Tangent = {math.tan(n)}")
