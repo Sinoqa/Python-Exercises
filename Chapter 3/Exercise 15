@@ -1,0 +1,9 @@
+#  Below is described how to find the date of Easter in any year. Despite its intimidating appearance,
+# this is not a hard problem. Note that bxc is the floor function, which for positive numbers
+# just drops the decimal part of the number. For instance b3.14c = 3. The floor function is part
+# of the math module. C = century (1900’s → C = 19)
+
+import math
+century = float(input("Enter century here > "))
+century_c = century*.010
+print(f"c = century({int(century)}'s) -> C ={math.floor(century_c)}")
