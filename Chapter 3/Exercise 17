@@ -1,0 +1,18 @@
+# Write a program that given an amount of change less than $1.00 will print out exactly how
+# many quarters, dimes, nickels, and pennies will be needed to efficiently make that change.
+# [Hint: the // operator may be useful.]
+
+
+change = int(input("How much is your change? > "))
+
+current_change = change
+quarters = change // 25
+change -= (quarters *25)
+dimes = change // 10
+change-= (dimes*10)
+nickels = change //5
+change-=(nickels*5)
+pennies = change //1
+change-=(pennies *1)
+
+print(f"Your total change in coins is {current_change} and that is {quarters} quarters {dimes} dimes {nickels} nickels {pennies } pennies")
