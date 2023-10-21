@@ -1,0 +1,12 @@
+# Ask the user for a temperature. Then ask them what units, Celsius or Fahrenheit, 
+# the temperature is in. Your program should convert the temperature to the other unit.
+
+
+temp = int(input("temperature > "))
+unit = input("is this F or C? > ")
+
+if unit.upper() == "C":
+    print(f"{temp}c converted to farenheit is {temp*(9/5)+32} f")
+
+elif unit.upper() == "F":
+    print(f"{temp} f converted to celcius is {(5/9)*(temp-32)} c")
