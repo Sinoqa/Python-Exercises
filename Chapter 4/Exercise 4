@@ -1,0 +1,19 @@
+# Write a program that asks the user how many credits they have taken. If they have taken 23
+# or less, print that the student is a freshman. If they have taken between 24 and 53, print that
+# they are a sophomore. The range for juniors is 54 to 83, and for seniors it is 84 and over
+
+creds = int(input("How many credits have you taken? > "))
+
+if creds <=23 and creds >0:
+    print("You are a freshman")
+
+elif creds >23 and creds <=53:
+    print("You are a sophomore")
+
+elif creds >=54 and creds <= 83:
+    print("You are a junior")
+
+elif creds >=84:
+    print("You are a senior")
+else:
+    print("You have input an invalid credit number please try again.")
