@@ -1,0 +1,11 @@
+# Generate a random number between 1 and 10. Ask the user to guess the number and print a
+# message based on whether they get it right or not
+from random import randint
+while True:
+    n = int(input("Guess the number > "))
+    number = randint(0,10)
+    if number == n:
+        print(f"congrats you got it right the number was {number}")
+        break
+    else:
+        print(f"sorry you didn't get it the number was {number}")
