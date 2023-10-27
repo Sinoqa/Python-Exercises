@@ -1,0 +1,11 @@
+# Write a program that asks the user for two numbers and prints Close if the numbers are
+# within .001 of each other and Not close otherwise.
+
+n = float(input("user number 1 here please > "))
+n2 = float(input("user number 2 here please > "))
+
+if n-0.001 ==n2 or n+0.001 == n2:
+    print("These numbers are close")
+
+else:
+    print("These numbers are not close")
