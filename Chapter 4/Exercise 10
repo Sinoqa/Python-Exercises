@@ -17,3 +17,7 @@ for i in range(1,11):
         print("Right.")
     else:
         print(f"Wrong. The answer is {c_answer}")
+
+
+
+(Also this is the first time i put comments in my codes from this day onwards im going to try and explain my codes through comments for more practice on how my thought process is on every code)
