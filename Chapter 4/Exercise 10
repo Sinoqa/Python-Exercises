@@ -1,0 +1,19 @@
+# Write a multiplication game program for kids. The program should give the player ten randomly generated multiplication questions to do. After each, the program should tell them
+# whether they got it right or wrong and what the correct answer is
+
+from random import randint
+
+#loops for the 10 questions
+for i in range(1,11):
+    rand_n1 = randint(1,9)
+    rand_n2 = randint(1,9)
+    c_answer = rand_n1 * rand_n2                        # this is the correct answer
+    print(f"question {i} :{rand_n1} x {rand_n2} ")      #prints the equation
+    u_answer = int(input("enter the answer here > "))   #user enters their answer
+
+
+# This is the logic behind the code(Whether the answer is right/wrong)
+    if u_answer == c_answer:
+        print("Right.")
+    else:
+        print(f"Wrong. The answer is {c_answer}")
