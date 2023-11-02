@@ -1,0 +1,25 @@
+#  Write a program that asks the user for an hour between 1 and 12, asks them to enter am or pm,
+# and asks them how many hours into the future they want to go. Print out what the hour will
+# be that many hours into the future, printing am or pm as appropriate. An example is shown
+# below
+
+
+#asks the users for values
+user_hour = int(input("Enter hour(1 - 12): "))
+user_ampm = int(input("am (1) or pm (2)? "))
+user_ftime = int(input("How many hours ahead? "))
+
+c_hour = (user_hour + user_ftime)
+if user_ampm == 1:
+    ampm = "am"
+elif user_ampm == 2:
+    ampm = "pm"
+
+while c_hour >12:
+    c_hour-=12
+    if ampm =="am":
+        ampm = "pm"
+    else:
+        ampm = "am"
+
+print(c_hour,ampm)
