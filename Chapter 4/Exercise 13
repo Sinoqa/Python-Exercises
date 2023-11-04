@@ -1,0 +1,37 @@
+# Write a program that lets the user play Rock-Paper-Scissors against the computer. There
+# should be five rounds, and after those five rounds, your program should print out who won
+# and lost or that there is a tie.
+import random
+
+#some numbers and logic
+rounds = 5
+answers = ["rock", "paper", "scissors"]
+comp_wins, p_wins = 0, 0
+
+
+for _ in range(rounds):
+    while True:
+        p1 = input("Enter (rock, paper, scissors) > ").lower()          #makes sure that the user inputs a valid answer
+        comp = random.choice(answers)
+        print(f"Computer chose > {comp} < ")
+
+        if p1 in answers:
+            break
+        else:
+            print("Invalid entry. Please try again.")
+#logic behind rock paper and scissors
+    if p1 == comp:
+        print("It's a tie")
+    elif (p1 == "rock" and comp == "scissors") or (p1 == "paper" and comp == "rock") or (p1 == "scissors" and comp == "paper"):
+        print("Player won")
+        p_wins += 1
+    else:
+        print("Computer won")
+        comp_wins += 1
+# logic behind who wins and who losses 
+if comp_wins < p_wins:
+    print(f"Player wins with {p_wins} wins")
+elif comp_wins > p_wins:
+    print(f"Computer wins with {comp_wins} wins")
+else:
+    print("It's a tie")
