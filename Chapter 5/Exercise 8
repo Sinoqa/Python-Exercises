@@ -1,0 +1,14 @@
+# Write a program that swaps the values of three variables x, y, and z, so that x gets the value
+# of y, y gets the value of z, and z gets the value of x
+x = int(input("input an integer here X > "))
+y = int(input("input an integer here Y > "))
+z = int(input("input an integer here Z > "))
+def swap(x,y,z):
+    temp2 = x  
+    x = y
+    y = z
+    z = temp2
+    print(x,y,z)
+
+
+swap(x,y,z)
