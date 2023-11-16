@@ -1,0 +1,21 @@
+def list_things():
+    my_list = []
+
+    for i in range(1,11):
+        while True:
+            user_test = int(input("Input test scores here > "))
+            if user_test <=100:
+                my_list.append(user_test)
+                break
+            else:
+                print("invalid, a value over 100 has been entered")
+    my_list.sort()
+    print(f"The lowest score is {my_list[0]} and the highest score is {my_list[(len(my_list)-1)]}")
+    print(f"The second highest score is {my_list[(len(my_list)-2)]}")
+    my_list.pop(0)
+    my_list.pop(0)
+    for scores in my_list:
+        sum+= scores
+    print(f"The average of all the scores rounded up is {round(sum/(len(my_list)-1))}")
+
+list_things()
