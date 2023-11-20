@@ -1,0 +1,23 @@
+#  Write a program that asks the user to guess a random number between 1 and 10. If they guess
+# right, they get 10 points added to their score, and they lose 1 point for an incorrect guess. Give
+# the user five numbers to guess and print their score after all the guessing is done
+from random import randint
+def guess_the_number():
+    score = 0
+    for guesses in range(1,6):
+        random_n = randint(1,10)
+        n = int(input("Input your guess here (1-10): "))
+        if n == random_n:
+            score +=10
+            print(f"Your guess is right, the number is {random_n}")
+        else:
+            if score != 0:
+                score -= 1
+                print("wrong guess")
+            else:
+                print("wrong guess")
+        
+    print(f"Your total score is {score}")
+        
+    
+guess_the_number()
