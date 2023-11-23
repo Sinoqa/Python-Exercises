@@ -1,0 +1,38 @@
+#The monty Hall problem with 4 doors
+
+
+from random import choice
+def montyhall():
+    wins_didnt_change = 0
+    wins_change = 0
+
+    for i in range(1,10001):
+        doors = ['door1', 'door2', 'door3','door4']
+        monty = choice(doors)
+        p_chose = choice(doors)
+        decoy_door = ""
+        for door in doors:
+            if door !=monty and door != p_chose:
+                decoy_door = door
+
+        if p_chose == monty:
+            wins_didnt_change+=1
+
+        for door in doors:
+            if door !=monty and door != p_chose and door != decoy_door:
+                doors.remove(door)
+        p_chose = choice(doors)
+        if p_chose == monty:
+            wins_change +=1
+
+
+    win_stay_percentage = (wins_didnt_change/10000)*100
+    win_no_stay = (wins_change/10000)*100
+
+
+    print(f"The percentage of games won if you dont switch is:{round(win_stay_percentage)}%")
+    print(f"The percentage of games won if you switch is: {round(win_no_stay)}%")
+    print(monty,p_chose,decoy_door)
+
+
+montyhall()
