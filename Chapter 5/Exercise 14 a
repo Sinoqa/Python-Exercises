@@ -1,0 +1,32 @@
+from random import randint
+import random
+def montyhall():
+    wins_didnt_change = 0
+    wins_change = 0
+
+    for i in range(1,10001):
+        choices = ['door1', 'door2', 'door3']
+        choices2 = []
+
+        p_choice = random.choice(choices)
+
+        monty = random.choice(choices)
+        choices2.append(monty)
+        choices2.append(p_choice)
+        if p_choice == monty:
+            wins_didnt_change +=1
+        p_choice = random.choice(choices2)
+        
+        if p_choice == monty:
+            wins_change+=1
+
+
+    win_stay_percentage = (wins_didnt_change/10000)*100
+    win_no_stay = (wins_change/10000)*100
+
+
+    print(f"The percentage of games won if you dont switch is:{round(win_stay_percentage)}%")
+    print(f"The percentage of games won if you switch is: {round(win_no_stay)}%")
+
+
+montyhall()
