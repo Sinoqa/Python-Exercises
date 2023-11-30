@@ -1,0 +1,31 @@
+#
+def strings():
+    word = input("Input a word here > ")
+    word_l = len(word)
+    word_list =[]
+    print(word_l)
+    for i in range(0,10):
+        print(word)
+    for letter in word:
+        word_list.append(letter)
+    print(word_list[0])
+    for letter in word_list[0:3]:
+        print(letter,end="")
+    print()
+    for letter in word_list[len(word)-3:len(word)]:
+        print(letter,end="")
+    print()
+    print(word[::-1])
+    if word_l > 7:
+        print("the word given does not reach 7 letters")
+
+    else:
+        print(word_list[word_l-1])
+    print(word[1:-1])
+    print(word.upper())
+    print(word.lower().replace("a","e"))
+    for letter in word:
+        spaced_letter = letter.replace(letter,"*")
+        print(spaced_letter,end="")
+
+strings()
