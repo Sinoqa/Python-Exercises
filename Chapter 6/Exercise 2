@@ -1,0 +1,8 @@
+guess = input("Input a sentence: ")
+n = 0
+sliced = guess.split(" ")
+for word in sliced:
+    n+= 1
+
+
+print(f"The amount of words you have input in the sentence is {n}")
