@@ -1,0 +1,13 @@
+def contains_vowels(word):
+    vowels = "aeiouAEIOU"
+    for letter in word:
+        if letter in vowels:
+            return True
+    return False
+
+user_input = input("Enter a word: ")
+
+if contains_vowels(user_input):
+    print("The word contains vowels.")
+else:
+    print("The word does not contain any vowels.")
