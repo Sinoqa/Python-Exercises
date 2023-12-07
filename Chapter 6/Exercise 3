@@ -1,0 +1,12 @@
+word = input("Input a formula that has alot of opening and closing parenthesis > ")
+first_part = 0
+last_part = 0
+for letter in word:
+    if letter == "(":
+        first_part+=1
+    elif letter == ")":
+        last_part +=1
+if first_part == last_part:
+    print("these two have the same opening and closing parenthesis")
+else:
+    print("These are not equal")
