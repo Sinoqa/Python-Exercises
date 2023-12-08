@@ -1,0 +1,7 @@
+def string(s):
+    s_low = s.lower()
+    n_s = s_low.replace(".","").replace(",","")
+    print(n_s)
+
+    
+string("This, is a . test. strin.g")
