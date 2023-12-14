@@ -1,0 +1,29 @@
+def email_check():
+
+    email_n = int(input("How many emails will you be inputting?"))
+
+    student_email = []
+    s_email_count = 0
+    prof_email = []
+    p_email_count = 0
+
+    for email in range(0,email_n):
+        emails = input("Write the email here >")
+        if  "@student.college.edu" in emails:
+            student_email.append(emails)
+            s_email_count+=1
+        elif "@prof.college.edu" in emails:
+            prof_email.append(emails)
+            p_email_count+=1
+        else:
+            print("This email belongs to neither a professor nor a student")
+    if s_email_count == 0 :
+        print(f"the number of professor email received = {p_email_count}, no student emails entered")
+
+
+    elif p_email_count == 0:
+        print(f"the number of student emails received = {s_email_count}, no professor emails entered")
+
+    else:
+        print(f"the number of student emails received = {s_email_count} and professors = {p_email_count}")
+email_check()
