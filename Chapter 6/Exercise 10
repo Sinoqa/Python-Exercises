@@ -1,0 +1,6 @@
+def idk_word(word):
+    for letter in word:
+        print(letter*2)
+
+
+idk_word("what")
