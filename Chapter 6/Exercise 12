@@ -1,0 +1,8 @@
+# Write a program that asks the user to enter a word and then capitalizes every other letter of
+# that word. So if the user enters rhinoceros, the program should print rHiNoCeRoS.
+word = "rhinoceros"
+for i in range(0,(len(word))):
+    if i % 2 ==0:
+        print(word[i],end="")
+    else:
+        print(word[i].upper(),end="")
