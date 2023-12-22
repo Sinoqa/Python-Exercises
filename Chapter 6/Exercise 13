@@ -1,0 +1,21 @@
+# Write a program that asks the user to enter two strings of the same length. The program
+# should then check to see if the strings are of the same length. If they are not, the program
+# should print an appropriate message and exit. If they are of the same length, the program
+# should alternate the characters of the two strings. For example, if the user enters abcde and
+# ABCDE the program should print out AaBbCcDdEe.
+def same_length():
+    word1 = input("enter first word >")
+    word2 = input("enter second word >")
+    word3 = ""
+    if len(word1) == len(word2):
+        for a,b in zip(word1,word2):
+            word3+=a
+            word3+=b
+
+        print(word3)
+
+    else:
+        print("The messages are not the same length, goodbye")
+
+
+same_length()
