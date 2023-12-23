@@ -1,0 +1,16 @@
+# Write a program that asks the user to enter their name in lowercase and then capitalizes the
+# first letter of each word of their name
+
+def caps_name():
+    n = input("input name >")
+    words = n.split()
+    
+    caps_letter = []
+    for word in words:
+        caps_letter.append(word.capitalize())
+
+    capitalized_name = ' '.join(caps_letter)
+    print(capitalized_name)
+
+
+caps_name()
